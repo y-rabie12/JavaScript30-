@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  }
+
+  body{
+      background-color: var(--cyan);
+      display:flex;
+      align-items:center;
+      justify-content: center;
+  }
+
+main{
+      text-align:center;
+      margin:1em;
+    
+}
+form{
+    margin-bottom:0.5em;
+}
+
+.headline{
+      color:white;
+      font-family: sans-serif;
+      font-weight: 900;
+      margin-bottom: 0.5em;
+}
+
+.enter{
+    color:var(--yellow);
+    font-family: sans-serif;
+    margin-bottom: 1em;
+}
+
+.click{
+    color:var(--teal);
+    font-family: sans-serif;
+    margin-bottom: 1em;
+}
+
+.remove{
+    color:var(--dark);
+    font-family:sans-serif;
+    margin-bottom: 1em;
+}
+
+.todo{
+    width:70%;
+    padding:0.4em;
+    border:none;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.btn{
+    width:25px;
+    height:25px;
+    background-color: #343a40;
+    color:#17a2b8;
+    border:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    color:var(--yellow);
+    transition: color 0.5s ease;
+}
+
+.styleEntry{
+    display:flex;
+    width:60%;
+    justify-content: space-between;
+    margin:10px auto;
+    border:2px solid var(--dark);
+    border-radius: 5px;
+    padding:0.5em;
+    background-color: var(--info) ;
+    color:white;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.complete{
+    color: var(--teal);
+    background-color: var(--green);
+    transition: background-color 0.5s ease;
+}
+
+.removeBtn {
+    border:none;
+    background-color: transparent;
+}
