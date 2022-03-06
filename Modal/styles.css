@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('hero.jpeg');
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height: 100vh;
+}
+
+.modal-container-window{
+      background-color: #fff;
+      padding:4em;
+      text-align:center;
+      border-radius: 5px;
+}
+
+.modal-container-window h1 {
+    font-size:4rem;
+    font-family: 'Roboto','sans-serif';
+}
+
+.btn{
+    font-size: 0.875rem;
+    background-color: #49a6e9;
+    color: #fff;
+    border:2px solid #49a6e9;
+    padding:0.5em;
+    border-radius: 5px;
+    width:30%;
+    margin-top:1em;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.btn:hover{
+    background-color: #fff;
+    border :  2px solid #49a6e9;
+    color:#49a6e9;
+    transition: all 0.5s ease;
+}
+
+.overlay{
+    background-color:  rgba(73, 166, 233, 0.5);
+    position:fixed;
+    min-height: 100%;
+    width:100%;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content{
+    position: relative;
+    width: 90vw;
+    height: 30vh;
+    max-width:620px;
+    background-color: #fff;
+    opacity:1;
+    display: grid;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.close-btn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    background-color: transparent;
+    border:none;
+    color:red;
+}
+
+
+.hide-modal{
+    visibility: hidden;
+}
+.show-modal{
+    visibility: visible;
+}
+
