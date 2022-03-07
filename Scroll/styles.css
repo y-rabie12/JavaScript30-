@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+
+/********* Home Section *********/
+
+header{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), url(./hero-bcg.jpeg) center center / cover no-repeat;
+    padding:1em;
+    color:white;
+    font-family: 'Open Sans',sans-serif; 
+}
+
+
+ul{
+    
+    display:flex;
+    gap:4rem;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.5rem;
+    font-weight:800;
+    list-style: none;
+
+}
+
+.logo{
+    height:4rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navbar li  a{
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+}
+
+.home_section{
+    text-align:center;
+    width:50%;
+    margin: 5rem auto;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.home_section .home_info h1 {
+  font-size:2.5rem;
+  letter-spacing: 10px;
+  margin-bottom:1em;
+  font-weight: 800;
+}
+
+.home_section .home_info  p{
+    margin-bottom: 1em;
+}
+
+.btn{
+    width: 25%;
+    padding:1em;
+    background-color: transparent;
+    border: 2px solid white;
+    color: #fff;
+    font-size:1rem;
+    letter-spacing: 1px;
+    font-family: 'Open Sans',sans-serif;
+}
+
+.btn:hover{
+    color:hsl(205, 89%, 70%);
+    background-color:#fff;
+}
+
+
+/********* Section Styling *********/
+
+span{
+    color:hsla(182, 63%, 54%);
+    
+}
+#about,#tours,#services{
+    font-family: 'Open sans',sans-serif;
+    font-size:1.5rem;
+    height:80vh;
+    text-align:center;
+}
+
+
+#tours,#about{
+    background-color: #F1F5F8;
+}
+
+
+footer {
+    font-family:'Open Sans',sans-serif;
+    padding: 5rem 1rem;
+    text-align:center;
+    background-color:#102A42;
+    color:#fff;
+}
+
+
+.fixed-nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
