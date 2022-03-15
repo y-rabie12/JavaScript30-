@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Mulish',sans-serif;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+    background-color: #A164DF;
+}
+
+.btns{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:60%;
+    max-width: 850px;
+    gap:30px;
+}
+
+.btn {
+    padding:1em;
+    border-radius: 5px;
+    border:none;
+    width:250px;
+    background-color: #6C38A0;
+    color:white;
+    font-size: 1.5rem;
+}
+
+.btn:hover{
+    background-color: #9C77BF;
+    transition: background-color 0.4s ease;
+}
