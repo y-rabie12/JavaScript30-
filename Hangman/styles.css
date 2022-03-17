@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Mulish',sans-serif;
+}
+
+body{
+    background-color: #34495E;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main{
+    color:white;
+}
+
+.word-container {
+    margin-top: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.word {
+    padding:0.5em;
+    border-bottom: 2px solid #2980b9 ;
+}
+
+.overlay{
+    background-color: hsla(210, 29%, 20%,0.8);
+    opacity:1;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.shown{
+    visibility: hidden;
+}
+
+.message{
+    color:white;
+    background-color: #2980B9;
+    opacity: 1;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:1em;
+    max-height: 250px;
+    font-weight: 900;
+    font-size: 1.25rem;
+    border-radius: 5px;
+}
