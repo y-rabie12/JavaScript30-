@@ -10,6 +10,8 @@ const overlay = document.querySelector('.overlay')
 
 const message =  document.querySelector('.message')
 
+const livesLeft =  document.querySelector('.lives-container')
+
 // Selected word
 let chosenWord  = ''
 
@@ -22,6 +24,8 @@ let correctOnes = 0;
 // Used to ensure that keys are not pressed twice
 let prev = [];
 
+
+livesLeft.textContent = `You have ${chances} left`
 
 // Select random word from wordBank
 const randomWord =  () => Math.trunc(Math.random()*wordBank.length)
@@ -74,7 +78,7 @@ const displayWord = function(e){
         
         // Message displayed once all letters are correct
         if(correctOnes === chosenWord.length) {
-            showMessage(`Wow! You've guessed correctly 🤩`)
+            showMessage(`Great Job! You've guessed correctly 🤩`)
             return
         }
 
@@ -82,7 +86,8 @@ const displayWord = function(e){
 }
     // if the key pressed is not correct
     else{
-         chances--
+         chances--;
+         livesLeft.textContent = `You have ${chances} left`
          if(chances === 0 && correctOnes < chosenWord.length) showMessage(`Wrong! Try Again! ☹️ `)
     }
 }
