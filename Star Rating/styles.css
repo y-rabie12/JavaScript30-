@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: cadetblue;
+
+}
+
+.rating-container{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-rate{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    text-align: center;
+}
+
+.fa-star{
+    width:20px;
+    height:20px;
+}
+
+.star-count {
+    margin: 40px auto;
+    padding:0.5em;
+    background-color: white;
+    border-radius: 5px;
+    width:30px;
+    text-align: center;
+}
+.confirmed{
+    color:gold;
+}
