@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+    color: #00FF00;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+main{
+    width:60%;
+    text-align: center;
+}
+
+h1 {
+    font-size:3rem;
+    margin-bottom:1em;
+}
+
+.first-paragraph {
+    font-size:1.5rem;
+    margin-bottom:1em;
+}
+
+.scoreboard{
+    width:45%;
+    margin:0 auto;
+}
+
+.board-title {
+    font-size:1.8rem;
+    border:2px solid #00FF00;
+    border-bottom: none;
+    padding:0.5em;
+}
+
+.scores-container {
+    border:2px solid #00FF00;
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap:2em;
+    padding:0.5em;
+}
+
+.you h2, .bot h2 {
+    font-size: 3rem;
+    margin-bottom: 0.3;
+}
+
+.you p ,.bot p {
+   font-size: 1.5rem;
+}
+
+.choose{
+    font-size:2rem;
+    margin:1em;
+}
+
+.btn{
+    color:#000;
+    background-color: #00FF00;
+    font-weight: 900;
+    border:none;
+    font-size:1.5rem;
+    padding:0.7em;
+    cursor: pointer;
+    margin: 0.3em;
+}
