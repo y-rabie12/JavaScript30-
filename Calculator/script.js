@@ -111,6 +111,7 @@ class Calculator{
 
 const calculator = new Calculator(previousOperandText,currentOperandText)
 
+// Event Listeners
 numbers.forEach( number => number.addEventListener('click', () => {
        calculator.appendNumber(number.innerText)
        calculator.updateDisplay()
